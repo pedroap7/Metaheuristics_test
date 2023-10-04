@@ -17,5 +17,5 @@ Formulating the optimization problem:
 
 Constraints (so far):
 
-    (amount of 0) in generate_vector <= 6
+    (amount of 0) in generate_vector = 6
 
