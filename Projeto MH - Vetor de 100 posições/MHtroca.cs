@@ -42,22 +42,22 @@ class MHtroca
     public static int ContaZerosEmPrimos(int[] vetor)
     {
         int contagem = 0;
-        bool[] numerosPrimos = new bool[100];
+        bool[] numerosNaoPrimos = new bool[100];
 
         for (int i = 2; i < vetor.Length; i++)
         {
-            if (!numerosPrimos[i])
+            if (!numerosNaoPrimos[i])
             {
                 for (int j = i * i; j < vetor.Length; j += i)
                 {
-                    numerosPrimos[j] = true;
+                    numerosNaoPrimos[j] = true;
                 }
             }
         }
 
         for (int i = 2; i < vetor.Length; i++)
         {
-            if (!numerosPrimos[i] && vetor[i] == 0)
+            if (!numerosNaoPrimos[i] && vetor[i] == 0)
             {
                 contagem++;
             }
