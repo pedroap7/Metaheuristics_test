@@ -28,7 +28,7 @@ class Program
                     Console.WriteLine(string.Join(" ", vetor));
                     MHescolhe.BuscaTabu_escolhe(vetor);
                 }
-                // Adicione outras estratégias aqui, se necessário
+                // Adicionarei outras estratégias aqui, caso precise
                 break;
 
             case 2:
@@ -40,7 +40,7 @@ class Program
                     Console.WriteLine(string.Join(" ", vetor));
                     MHtroca.BuscaTabu_troca(vetor);
                 }
-                // Adicione outras estratégias aqui, se necessário
+                // Adicionarei outras estratégias aqui, caso precise
                 break;
         }
 
